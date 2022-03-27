@@ -200,7 +200,7 @@ public class CardForm {
         $("[data-test-id=date] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id=date] input").sendKeys(dateFormatted);
         $("[data-test-id='name'] .input__control").val("Иванова-Сидорова Анна-Мария");
-        $("[data-test-id='phone'] .input__control").val("+7900800706");
+        $("[data-test-id='phone'] .input__control").val("+79008007060");
         $(".button").click();
         $("[data-test-id='agreement'].input_invalid").shouldHave(visible);
 
