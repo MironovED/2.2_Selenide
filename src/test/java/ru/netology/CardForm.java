@@ -185,7 +185,7 @@ public class CardForm {
         $("[data-test-id='phone'] .input__control").val("8(900)800-70-60");
         $("[data-test-id='agreement']").click();
         $(".button").click();
-        $("[data-test-id='phone'].input_invalid").shouldHave(Condition.text(" указан неверно. Должно быть 11 цифр, например, +79012345678."));
+        $("[data-test-id='phone'].input_invalid").shouldHave(Condition.text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
 
     }
 
@@ -200,7 +200,7 @@ public class CardForm {
         $("[data-test-id=date] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id=date] input").sendKeys(dateFormatted);
         $("[data-test-id='name'] .input__control").val("Иванова-Сидорова Анна-Мария");
-        $("[data-test-id='phone'] .input__control").val("+79008007060");
+        $("[data-test-id='phone'] .input__control").val("+7900800706");
         $(".button").click();
         $("[data-test-id='agreement'].input_invalid").shouldHave(visible);
 
