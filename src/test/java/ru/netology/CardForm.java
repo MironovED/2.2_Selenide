@@ -185,7 +185,7 @@ public class CardForm {
         $("[data-test-id='phone'] .input__control").val("8(900)800-70-60");
         $("[data-test-id='agreement']").click();
         $(".button").click();
-        $("[data-test-id='phone'].input_invalid").shouldHave(Condition.text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
+        $("[data-test-id='phone'].input_invalid").shouldHave(Condition.text(" указан неверно. Должно быть 11 цифр, например, +79012345678."));
 
     }
 
@@ -205,6 +205,5 @@ public class CardForm {
         $("[data-test-id='agreement'].input_invalid").shouldHave(visible);
 
     }
-
 
 }
